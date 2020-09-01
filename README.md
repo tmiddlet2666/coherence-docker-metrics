@@ -10,7 +10,7 @@ In this example we startup 3 docker images:
 The Docker images expose the following ports:
 
 * Coherence
-  * 1408 - gRPC Proxy port See [here](https://coherence.community/20.06/docs/#/coherence-grpc/README)
+  * 1408 - gRPC Proxy port
   * 7001 - microprofile metrics endpoint to be scraped by Prometheus
   * 20000 - Coherence*Extend port
   * 30000 - Management over REST port
