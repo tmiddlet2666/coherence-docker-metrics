@@ -11,12 +11,13 @@ In this example we use 3 docker images:
 
 You must have the following:
 * Docker Desktop for Mac or the equivalent Docker environment for you O/S.
-* Docker-compose
-* Cloned this repository
+* docker-compose
+* Cloned this repository - https://github.com/tmiddlet2666/coherence-docker-metrics.git
 
 # Download the Grafana Dashboards
 
-1. Clone the Coherence Operator repository - https://github.com/oracle/coherence-operator
+1. Clone the Coherence Operator repository - https://github.com/oracle/coherence-operator.git
+
 
 1. Copy all the *.json files from `coherence-operator/dashboards/grafana` to `grafana/dashboards`
 
