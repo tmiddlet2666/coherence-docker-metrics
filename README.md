@@ -58,7 +58,7 @@ If you have issues with the Grafana dashboards showing data, then check the Prom
 
 http://10.0.0.204:9090/targets
 
-If you get a message similar to this then you may need to change the hostname in `prometheus/prometheus.yaml` to the IP/hostname you are running on.
+If you get a message similar to the following, then you may need to change the hostname in `prometheus/prometheus.yaml` to the IP/hostname you are running on.
 
 ```console
 Get "http://host.docker.internal:7001/metrics": dial tcp: lookup host.docker.internal on 10.0.0.138:53: no such host
