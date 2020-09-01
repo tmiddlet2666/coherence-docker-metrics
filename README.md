@@ -64,7 +64,7 @@ Get "http://host.docker.internal:7001/metrics": dial tcp: lookup host.docker.int
    on 10.0.0.138:53: no such host
 ```
 
-You may also need to change the hostname in [grafana/datasources.yaml](grafana/datasources/yaml).
+You may also need to change the hostname in [grafana/datasources.yaml](grafana/datasources.yaml).
 
 # References
 
