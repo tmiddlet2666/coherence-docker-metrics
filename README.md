@@ -3,9 +3,9 @@
 This document explains how to run the Coherence Docker image and view metrics via Grafana using `docker-compose`.
 
 In this example we startup 3 docker images:
+1. Coherence Community Edition (CE) version 20.06.1
 1. Grafana
 1. Prometheus
-1. Coherence Community Edition (CE) version 20.06.1
 
 The Docker images expose the following ports:
 
