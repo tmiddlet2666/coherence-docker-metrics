@@ -60,10 +60,11 @@ http://10.0.0.204:9090/targets
 If you get a message similar to the following, then you may need to change the hostname in [prometheus/prometheus.yaml](prometheus/prometheus.yaml) to the IP/hostname you are running on.
 
 ```console
-Get "http://host.docker.internal:7001/metrics": dial tcp: lookup host.docker.internal on 10.0.0.138:53: no such host
+Get "http://host.docker.internal:7001/metrics": dial tcp: lookup host.docker.internal 
+   on 10.0.0.138:53: no such host
 ```
 
-You may also need to change the hostname in [grafana/datasources/yaml](grafana/datasources/yaml)`.
+You may also need to change the hostname in [grafana/datasources.yaml](grafana/datasources/yaml)`.
 
 # References
 
