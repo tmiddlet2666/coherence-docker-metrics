@@ -18,8 +18,7 @@ You must have the following:
 
 1. Clone the Coherence Operator repository - https://github.com/oracle/coherence-operator.git
 
-
-1. Copy all the *.json files from `coherence-operator/dashboards/grafana` to `grafana/dashboards`
+1. Copy all the `*.json` files from `coherence-operator/dashboards/grafana` to `grafana/dashboards`
 
 # Start the Docker containers
 
@@ -58,13 +57,13 @@ If you have issues with the Grafana dashboards showing data, then check the Prom
 
 http://10.0.0.204:9090/targets
 
-If you get a message similar to the following, then you may need to change the hostname in `prometheus/prometheus.yaml` to the IP/hostname you are running on.
+If you get a message similar to the following, then you may need to change the hostname in [prometheus/prometheus.yaml](prometheus/prometheus.yaml) to the IP/hostname you are running on.
 
 ```console
 Get "http://host.docker.internal:7001/metrics": dial tcp: lookup host.docker.internal on 10.0.0.138:53: no such host
 ```
 
-You may also need to change the hostname in `grafana/datasources/yaml`.
+You may also need to change the hostname in [grafana/datasources/yaml](grafana/datasources/yaml)`.
 
 # References
 
