@@ -52,8 +52,19 @@ If required, you can access the Prometheus UI using the following URL:
 
 http://127.0.0.1:9000/
 
-# References
+# Troubleshooting
 
+If you have issues with the Grafana dashboards showing data, then check the Prometheus targets using the following URL:
+
+http://10.0.0.204:9090/targets
+
+If you get a message similar to this then you may need to change the hostname in `prometheus/prometheus.yaml` to the IP/hostname you are running on.
+
+```console
+Get "http://host.docker.internal:7001/metrics": dial tcp: lookup host.docker.internal on 10.0.0.138:53: no such host
+```
+
+# References
 
 See the following for more information:
 * [Coherence Community Edition on GitHub](https://github.com/oracle/coherence)
