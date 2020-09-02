@@ -18,7 +18,7 @@ grafana:
     - 3000:3000
 
 coherence:
-  image: oraclecoherence/coherence-ce:20.06.1-SNAPSHOT
+  image: oraclecoherence/coherence-ce:20.06.1
   environment:
     - coherence.member=storage
     - coherence.machine=localhost
