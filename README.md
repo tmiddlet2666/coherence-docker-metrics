@@ -30,7 +30,7 @@ You must have the following:
 
 1. Clone the Coherence Operator repository - https://github.com/oracle/coherence-operator.git
 
-1. Copy all the `*.json` files from `coherence-operator/dashboards/grafana` to `grafana/dashboards`
+1. Copy all the `*.json` files from `coherence-operator/dashboards/grafana` to the direcotry `grafana/dashboards` under cloned `coherence-docker-metrics` repository.
 
 # Start the Docker containers
 
