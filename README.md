@@ -14,7 +14,7 @@ The Docker images expose the following ports:
   * 7001 - microprofile metrics endpoint to be scraped by Prometheus
   * 20000 - Coherence*Extend port
   * 30000 - Management over REST port
-* Grafana 
+* Grafana
   * 3000 - Grafana UI
 * Prometheus
   * 9090 - Prometheus UI
@@ -27,6 +27,16 @@ You must have the following:
 * Cloned this repository - https://github.com/tmiddlet2666/coherence-docker-metrics.git
 
 # Download the Grafana Dashboards
+
+## Linx/MacOS
+
+Run the following to download the dashboards:
+
+```bash
+cd coherence-docker-metrics/grafana
+./download-dashboard.sh
+```
+## Windows
 
 1. Clone the Coherence Operator repository - https://github.com/oracle/coherence-operator.git
 
