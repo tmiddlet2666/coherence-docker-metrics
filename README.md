@@ -40,7 +40,7 @@ cd coherence-docker-metrics/grafana
 
 1. Clone the Coherence Operator repository - https://github.com/oracle/coherence-operator.git
 
-1. Copy all the `*.json` files from `coherence-operator/dashboards/grafana` to the direcotry `grafana/dashboards` under cloned `coherence-docker-metrics` repository.
+1. Copy all the `*.json` files from `coherence-operator/dashboards/grafana` to the directory `grafana/dashboards` under cloned `coherence-docker-metrics` repository.
 
 # Start the Docker containers
 
