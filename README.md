@@ -44,7 +44,7 @@ cd coherence-docker-metrics/grafana
 
 # Start the Docker containers
 
-from the directory `coherence-docker-metrics` directory run:
+from the `coherence-docker-metrics` directory run:
 
 ```bash
 docker-compose up -d
