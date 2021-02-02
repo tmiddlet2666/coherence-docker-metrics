@@ -23,8 +23,8 @@ coherence:
     - coherence.member=storage
     - coherence.machine=localhost
     - coherence.metrics.http.enabled=true
-    - coherence.metrics.http.host=0.0.0.0
   ports:
-    - 7001:7001
+    - 20000:20000
     - 30000:30000
     - 1408:1408
+    - 9612:9612
