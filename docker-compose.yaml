@@ -24,7 +24,7 @@ coherence:
     - coherence.machine=localhost
     - coherence.metrics.http.enabled=true
   ports:
-    - 7001:7001
     - 30000:30000
+    - 20000:10000
     - 1408:1408
     - 9612:9612
