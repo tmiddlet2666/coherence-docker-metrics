@@ -18,10 +18,12 @@ grafana:
     - 3000:3000
 
 coherence:
-  image: oraclecoherence/coherence-ce:20.06.1
+  image: oraclecoherence/coherence-ce:20.12
   environment:
     - coherence.member=storage
     - coherence.machine=localhost
+    - coherence.metrics.http.enabled=true
+    - coherence.metrics.http.host=0.0.0.0
   ports:
     - 7001:7001
     - 30000:30000
