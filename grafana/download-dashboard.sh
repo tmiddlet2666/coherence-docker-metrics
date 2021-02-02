@@ -7,4 +7,5 @@ for file in alerts-dashboard.json coherence-dashboard-main.json federation-detai
             persistence-summary-dashboard.json service-details-dashboard.json 
 do
    curl https://raw.githubusercontent.com/oracle/coherence-operator/master/dashboards/grafana/${file} -o dashboards/${file}
+
 done
