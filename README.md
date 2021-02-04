@@ -79,7 +79,8 @@ If you have issues with the Grafana dashboards showing data, then check the Prom
 
 http://10.0.0.204:9090/targets
 
-If the connection is not working, then you may need to change the hostname in [prometheus/prometheus.yaml](prometheus/prometheus.yaml) to the IP/hostname you are running on.
+If the connection is not working, then you may need to change the hostname in [prometheus/prometheus.yaml](prometheus/prometheus.yaml) 
+to the IP/hostname you are running on.
 
 The current hostname is docker0, IP of 172.17.0.1, which works for most environments. You can also use `host.docker.internal` on Mac.
 
