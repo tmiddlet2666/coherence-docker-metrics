@@ -3,7 +3,7 @@
 This document explains how to run the Coherence Docker image and view metrics via Grafana using `docker-compose`.
 
 In this example we startup 3 docker images:
-1. Coherence Community Edition (CE) version 20.12
+1. Coherence Community Edition (CE) version 20.12.1
 1. Grafana
 1. Prometheus
 
@@ -55,7 +55,7 @@ Creating coherence-docker-metrics_prometheus_1 ... done
 docker ps
 CONTAINER ID        IMAGE                                           COMMAND                  CREATED             STATUS              PORTS                                                                                           NAMES
 4d6e6481f308        grafana/grafana                                 "/run.sh"                20 seconds ago      Up 19 seconds       0.0.0.0:3000->3000/tcp                                                                          coherence-docker-metrics_grafana_1
-0acff01dcdac        oraclecoherence/coherence-ce:20.06.1            "java -Dcoherence.lo…"   20 seconds ago      Up 19 seconds       0.0.0.0:1408->1408/tcp, 9612/tcp, 0.0.0.0:7001->7001/tcp, 0.0.0.0:30000->30000/tcp, 20000/tcp   coherence-docker-metrics_coherence_1
+0acff01dcdac        oraclecoherence/coherence-ce:20.12.1            "java -Dcoherence.lo…"   20 seconds ago      Up 19 seconds       0.0.0.0:1408->1408/tcp, 9612/tcp, 0.0.0.0:7001->7001/tcp, 0.0.0.0:30000->30000/tcp, 20000/tcp   coherence-docker-metrics_coherence_1
 dea09bd6903e        prom/prometheus                                 "/bin/prometheus --c…"   20 seconds ago      Up 19 seconds       0.0.0.0:9090->9090/tcp                                                                          coherence-docker-metrics_prometheus_1
 ```
 
