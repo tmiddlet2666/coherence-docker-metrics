@@ -77,7 +77,7 @@ http://127.0.0.1:9000/
 
 If you have issues with the Grafana dashboards showing data, then check the Prometheus targets using the following URL:
 
-http://10.0.0.204:9090/targets
+http://127.0.0.1:9090/targets
 
 If the connection is not working, then you may need to change the hostname in [prometheus/prometheus.yaml](prometheus/prometheus.yaml) 
 to the IP/hostname you are running on.
