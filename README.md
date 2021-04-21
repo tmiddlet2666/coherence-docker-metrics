@@ -2,7 +2,7 @@
 
 This document explains how to run the Coherence Docker image and view metrics via Grafana using `docker-compose`.
 
-In this example we startup 3 docker images:
+In this example we initially startup 3 docker images:
 1. Coherence Community Edition (CE) version 20.12.1
 1. Grafana
 1. Prometheus
@@ -22,8 +22,8 @@ The Docker images expose the following ports:
 # Prerequisites
 
 You must have the following:
-* Docker Desktop for Mac or the equivalent Docker environment for you O/S.
-* docker-compose
+* Docker Desktop for Mac or the equivalent Docker environment for you O/S
+* docker-compose - at least version 1.20+
 * Cloned this repository - https://github.com/tmiddlet2666/coherence-docker-metrics.git
 
 # Download the Grafana Dashboards
@@ -79,7 +79,7 @@ If you have issues with the Grafana dashboards showing data, then check the Prom
 
 http://127.0.0.1:9090/targets
 
-If the connection is not working, then you may need to change the hostname in [prometheus/prometheus.yaml](prometheus/prometheus.yaml) 
+If the connection is not working, then you may need to change the hostname in [prometheus/prometheus.yaml](prometheus/prometheus.yaml)
 to the IP/hostname you are running on.
 
 The current hostname is docker0, IP of 172.17.0.1, which works for most environments. You can also use `host.docker.internal` on Mac.
