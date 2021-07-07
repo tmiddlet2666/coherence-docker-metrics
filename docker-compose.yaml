@@ -20,7 +20,7 @@ services:
       - 3000:3000
 
   coherence:
-    image: oraclecoherence/coherence-ce:20.12.1
+    image: oraclecoherence/coherence-ce:21.06
     environment:
       - coherence.member=member1
       - coherence.machine=localhost
