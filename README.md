@@ -7,6 +7,10 @@ In this example we initially startup 3 docker images:
 1. Grafana
 1. Prometheus
 
+> Note: This branch (master), uses the latest Grafana versions which sometimes seem to be unstable 
+and do not always work. The `grafana6` branch [here](https://github.com/tmiddlet2666/coherence-docker-metrics/tree/grafana6) will 
+always work and should be prefered.
+
 The Docker images expose the following ports:
 
 * Coherence
