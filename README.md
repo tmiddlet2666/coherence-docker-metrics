@@ -2,6 +2,8 @@
 
 This document explains how to run the Coherence Docker image and view metrics via Grafana using `docker-compose`.
 
+> Note: This branch uses Grafana6 rather than the latest, which seems to be quite unstable.
+
 In this example we startup 3 docker images:
 1. Coherence Community Edition (CE) version 21.06
 1. Grafana
@@ -34,7 +36,7 @@ Run the following to download the dashboards:
 
 ```bash
 cd coherence-docker-metrics/grafana
-./download-dashboard.sh
+./download-dashboards.sh
 ```
 ## Windows
 
