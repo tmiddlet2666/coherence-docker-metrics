@@ -34,7 +34,7 @@ Run the following to download the dashboards:
 
 ```bash
 cd coherence-docker-metrics/grafana
-./download-dashboard.sh
+./download-dashboards.sh
 ```
 ## Windows
 
