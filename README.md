@@ -2,8 +2,8 @@
 
 This document explains how to run the Coherence Docker image and view metrics via Grafana using `docker-compose`.
 
-In this example we initially startup 3 docker images:
-1. Coherence Community Edition (CE) version 21.06
+In this example we initially startup 4 docker images:
+1. 2 x Coherence Community Edition (CE) version 21.06
 1. Grafana
 1. Prometheus
 
@@ -13,11 +13,13 @@ always work and should be prefered.
 
 The Docker images expose the following ports:
 
-* Coherence
+* Coherence 1
   * 1408 - gRPC Proxy port
   * 9612 - Coherence metrics endpoint to be scraped by Prometheus
   * 20000 - Coherence*Extend port
   * 30000 - Management over REST port
+* Coherence 2
+  * 9613 - Coherence metrics endpoint to be scraped by Prometheus
 * Grafana
   * 3000 - Grafana UI
 * Prometheus
