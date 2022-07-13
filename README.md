@@ -102,6 +102,6 @@ See the following for more information:
 * [Coherence Community Home Page](https://coherence.community/)
 * [Coherence documentation on Metrics](https://docs.oracle.com/en/middleware/standalone/coherence/14.1.1.0/manage/using-coherence-metrics.html)
 * [Coherence Operator on GitHub](https://github.com/oracle/coherence-operator)
-* [Coherence Operator Metrics Documentation](https://oracle.github.io/coherence-operator/docs/3.0.0/#/metrics/010_overview)
+* [Coherence Operator Metrics Documentation](https://oracle.github.io/coherence-operator/docs/latest/#/docs/metrics/010_overview)
 * [Coherence Operator Grafana Dashboards in Detail](https://oracle.github.io/coherence-operator/docs/3.0.2/#/metrics/040_dashboards)
 * [Grafana](https://grafana.com/)
