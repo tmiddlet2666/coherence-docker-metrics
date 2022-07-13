@@ -1,7 +1,7 @@
 version: "3.5"
 services:
   prometheus:
-    image: prom/prometheus
+    image: prom/prometheus:v2.36.2
     networks:
       coherence:
     volumes:
@@ -12,9 +12,9 @@ services:
       - 9090:9090
 
   grafana:
-    image: grafana/grafana
     networks:
       coherence:
+    image: grafana/grafana:8.5.6
     volumes:
       - ./grafana/grafana.ini:/etc/grafana/grafana.ini
       - ./grafana/datasources.yaml:/etc/grafana/provisioning/datasources/datasources.yaml
@@ -24,17 +24,16 @@ services:
       - 3000:3000
 
   coherence1:
-    image: ghcr.io/oracle/coherence-ce:21.12.2
     hostname: machine1
     networks:
       coherence:
         aliases:
           - machine1
+    image: ghcr.io/oracle/coherence-ce:22.06
     environment:
       - coherence.cluster=cluster1
       - coherence.member=member1
       - coherence.machine=machine1
-      - coherence.site=Site1
       - coherence.metrics.http.enabled=true
       - coherence.wka=machine1
     ports:
@@ -44,19 +43,20 @@ services:
       - 9612:9612
 
   coherence2:
-    image: ghcr.io/oracle/coherence-ce:21.12.2
     hostname: machine2
     networks:
       coherence:
         aliases:
           - machine2
+    image: ghcr.io/oracle/coherence-ce:22.06
     environment:
       - coherence.cluster=cluster1
       - coherence.member=member2
-      - coherence.machine=machine2
-      - coherence.site=Site1
+      - coherence.machine=machine1
       - coherence.metrics.http.enabled=true
       - coherence.wka=machine1
+    ports:
+      - 9613:9612
 
 networks:
   coherence:
