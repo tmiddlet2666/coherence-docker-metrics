@@ -29,7 +29,7 @@ services:
       coherence:
         aliases:
           - machine1
-    image: ghcr.io/oracle/coherence-ce:22.06
+    image: ghcr.io/oracle/coherence-ce:22.06.1
     environment:
       - coherence.cluster=cluster1
       - coherence.member=member1
@@ -48,7 +48,7 @@ services:
       coherence:
         aliases:
           - machine2
-    image: ghcr.io/oracle/coherence-ce:22.06
+    image: ghcr.io/oracle/coherence-ce:22.06.1
     environment:
       - coherence.cluster=cluster1
       - coherence.member=member2
