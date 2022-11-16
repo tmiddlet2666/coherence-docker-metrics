@@ -2,6 +2,8 @@
 
 This document explains how to run the Coherence Docker image and view metrics via Grafana using `docker-compose`.
 
+>NOTE: This repository is no longer being maintained. Please see the updated projects in https://github.com/tmiddlet2666/coherence-playground.
+
 In this example we initially startup 4 docker images:
 1. 2 x Coherence Community Edition (CE) version 22.09
 1. Grafana - 8.5.6
